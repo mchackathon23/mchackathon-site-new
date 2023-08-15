@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("first-bg.jpg");
+  background-image: url("$lib/first-bg.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -131,7 +131,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("second-bg.jpg");
+  background-image: url("$lib/second-bg.jpg");
   background-position: center;
   background-size: cover;
 }
