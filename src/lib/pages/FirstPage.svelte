@@ -80,4 +80,7 @@
     </button>
     <div class="scroll" />
     <div class="bg-fade" />
+    <video id="first-page-bg" preload="auto" autoplay loop muted>
+        <source src="first-bg.mp4" />
+    </video>
 </div>
