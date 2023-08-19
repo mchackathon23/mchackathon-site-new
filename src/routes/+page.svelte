@@ -10,24 +10,7 @@
     onMount(() => {
 
         if(window.innerWidth < 768) document.getElementById("first-page-bg").remove();
-        if(window.innerWidth < 768 && !window.location.hash) {
-            window.location.hash = "#loaded";
-            setTimeout(() => {
-                window.location.reload();
-            }, 1000);
-        }
 
-        let registerAnimate = 0;
-        let logo = document.querySelector(".main-text");
-        let year = document.querySelector(".bg-text");
-        let register = document.querySelector(".register-button");
-        let scroll = document.querySelector(".scroll");
-        let about = document.getElementById("about");
-        let sponsors = document.getElementById("sponsors");
-
-        var tick = 0;
-
-        setInterval(animate, 10);
         function animate() {
             logo.style.transform =
                 "translate(" + Math.sin(tick) + "vw, " + Math.cos(tick) + "vw)";

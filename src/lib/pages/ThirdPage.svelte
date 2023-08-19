@@ -7,11 +7,11 @@
         and email <a href="mailto:mc.hackathon23@gmail.com">mc.hackathon23@gmail.com</a>
     </p>
     <div class="gold">
-        <a href="https://www.leangap.org/"><img src="../sponsors/leangap.png" alt="leangap" /></a>
+        <a href="https://www.leangap.org/"><img src="../sponsors/leangap.png" alt="leangap" width="1" height="1" /></a>
     </div>
     <div class="silver">
-        <a href="https://artofproblemsolving.com/"><img src="../sponsors/aops.png" alt="aops" /></a>
-        <a href=""><img src="" alt="" /></a>
+        <a href="https://artofproblemsolving.com/"><img src="../sponsors/aops.png" alt="aops" width="1" height="1" /></a>
+        <a href=""><img src="" alt="" width="1" height="1" /></a>
     </div>
     <div class="footer">
         <img src="../logo.png" alt="logo" />

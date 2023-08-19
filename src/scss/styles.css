@@ -353,6 +353,7 @@
 }
 .third-page .gold img {
   height: 80%;
+  width: auto;
 }
 .third-page .silver {
   width: 90vw;
