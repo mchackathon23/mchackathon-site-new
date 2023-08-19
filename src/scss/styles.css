@@ -32,10 +32,15 @@
 
 .first-page {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .first-page {
+    height: 100vh;
+  }
 }
 .first-page h1 {
   color: white;
@@ -126,6 +131,12 @@
   -webkit-animation: down 1.5s infinite;
   z-index: 20;
   border-color: rgb(255, 129, 117);
+  display: none;
+}
+@media (min-width: 768px) {
+  .first-page .scroll {
+    display: block;
+  }
 }
 .first-page .scroll::before {
   content: "";
@@ -152,11 +163,17 @@
 }
 .first-page .bg-fade {
   width: 100vw;
-  height: 40vh;
+  height: 20vh;
   position: absolute;
-  bottom: 0;
+  top: 50vh;
   background-image: linear-gradient(180deg, rgba(4, 2, 13, 0), rgb(4, 2, 13));
   z-index: 10;
+}
+@media (min-width: 768px) {
+  .first-page .bg-fade {
+    height: 40vh;
+    top: 60vh;
+  }
 }
 .first-page #first-page-bg {
   background-image: url("$lib/first-bg.jpg");
@@ -174,13 +191,18 @@
 
 .second-page {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url("$lib/second-bg.jpg");
   background-position: center;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  .second-page {
+    height: 100vh;
+  }
 }
 .second-page-content {
   width: 70%;
@@ -201,7 +223,7 @@
 .second-page h1 {
   font-family: "Orbitron", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: white;
   padding: 1rem 2rem;
   background-color: rgba(125, 125, 125, 0.4);
@@ -257,6 +279,105 @@
   padding: 0;
 }
 
+.third-page {
+  width: 90vw;
+  padding: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+@media (min-width: 768px) {
+  .third-page {
+    width: 80vw;
+    padding: 0 10vw;
+  }
+}
+.third-page h1 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  padding: 1rem 2rem;
+  background-color: rgba(125, 125, 125, 0.4);
+  border-radius: 3rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .third-page h1 {
+    font-size: 3.5vw;
+  }
+}
+.third-page p {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  margin-top: 4vh;
+}
+.third-page p a {
+  color: rgb(255, 129, 117);
+  font-weight: bold;
+  text-decoration-style: underline;
+  text-decoration-thickness: 0.1rem;
+}
+.third-page .gold {
+  width: 100%;
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-auto-rows: 10vh;
+  row-gap: 2vh;
+  opacity: 0.9;
+}
+@media (min-width: 768px) {
+  .third-page .gold {
+    grid-auto-rows: 20vh;
+  }
+}
+.third-page .gold a {
+  background-color: #FEBC59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+.third-page .gold img {
+  height: 80%;
+}
+.third-page .silver {
+  width: 100%;
+  margin-top: 2vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 8vh;
+  row-gap: 2vh;
+  column-gap: 2vw;
+  opacity: 0.9;
+}
+@media (min-width: 768px) {
+  .third-page .silver {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 15vh;
+  }
+}
+.third-page .silver a {
+  background-color: #c0c0c0;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.third-page .silver img {
+  height: 80%;
+}
+.third-page .footer {
+  margin-top: 5vh;
+  width: 100%;
+  height: 10vh;
+}
+
 /* https://codepen.io/cbanlawi/pen/xxRBeMY */
 .glitch {
   font-size: 5rem;
@@ -291,6 +412,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background: black;
 }
 
 p {

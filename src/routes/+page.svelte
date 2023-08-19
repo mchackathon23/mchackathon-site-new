@@ -1,6 +1,7 @@
 <script>
     import FirstPage from "../lib/pages/FirstPage.svelte";
     import SecondPage from "../lib/pages/SecondPage.svelte";
+    import ThirdPage from "../lib/pages/ThirdPage.svelte";
     import { onMount } from "svelte";
 
     let y = 0;
@@ -13,6 +14,7 @@
         let register = document.querySelector(".register-button");
         let scroll = document.querySelector(".scroll");
         let about = document.getElementById("about");
+        let sponsors = document.getElementById("sponsors");
 
         var tick = 0;
 
@@ -32,6 +34,9 @@
 
             about.style.transform = "translate(" + Math.sin(tick + Math.PI / 4) + "vw, " + Math.cos(tick * 2) + "vw";
             about.style.transform += "rotate(" + Math.sin(tick + Math.PI / 4) * 3 + "deg)";
+
+            sponsors.style.transform = "translate(" + Math.sin(tick + Math.PI / 4) + "vw, " + Math.cos(tick * 2) + "vw";
+            sponsors.style.transform += "rotate(" + Math.sin(tick + Math.PI / 4) * 3 + "deg)";
 
             if (registerOn) {
                 if (registerAnimate < 0.95) {
@@ -68,3 +73,4 @@
 
 <FirstPage {y} bind:registerOn />
 <SecondPage />
+<ThirdPage />

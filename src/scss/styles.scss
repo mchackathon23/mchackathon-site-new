@@ -3,6 +3,7 @@
 @import "./animations";
 @import "./first-page";
 @import "./second-page";
+@import "./third-page";
 @import "./glitch";
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Nunito:wght@700&family=PT+Sans:wght@400;700&display=swap');
@@ -12,6 +13,7 @@ body {
     padding: 0;
 
     overflow-x: hidden;
+    background: black;
 }
 
 p {

@@ -1,9 +1,13 @@
 .first-page {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include breakpoint(md) {
+        height: 100vh;
+    }
 
     h1 {
         color: white;
@@ -107,6 +111,12 @@
 
         border-color: $primary-color;
 
+        display: none;
+
+        @include breakpoint(md) {
+            display: block;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -136,9 +146,14 @@
 
     .bg-fade {
         width: 100vw;
-        height: 40vh;
+        height: 20vh;
         position: absolute;
-        bottom: 0;
+        top: 50vh;
+
+        @include breakpoint(md) {
+            height: 40vh;
+            top: 60vh;
+        }
 
         background-image: linear-gradient(180deg, rgba(4,2,13,0), rgba(4,2,13,1));
         z-index: 10;

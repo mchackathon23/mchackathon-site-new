@@ -1,6 +1,6 @@
 .second-page {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +8,10 @@
     background-image: url('$lib/second-bg.jpg');
     background-position: center;
     background-size: cover; 
+
+    @include breakpoint(md) {
+        height: 100vh;
+    }
 
     &-content {
         width: 70%;
@@ -30,7 +34,7 @@
     h1 {
         font-family: 'Orbitron', sans-serif;
         font-weight: 700;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: white;
         padding: 1rem 2rem;
         background-color: rgba(125,125,125,0.4);
