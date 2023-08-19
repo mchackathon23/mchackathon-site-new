@@ -73,6 +73,10 @@
 
         img {
             height: 80%;
+
+            @include breakpoint(md) {
+                width: auto;
+            }
         }
 
     }
@@ -103,6 +107,10 @@
 
         img {
             height: 80%;
+
+            @include breakpoint(md) {
+                width: auto;
+            }
         }
     }
 

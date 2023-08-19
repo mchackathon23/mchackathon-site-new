@@ -354,6 +354,11 @@
 .third-page .gold img {
   height: 80%;
 }
+@media (min-width: 768px) {
+  .third-page .gold img {
+    width: auto;
+  }
+}
 .third-page .silver {
   width: 90vw;
   margin-top: 2vh;
@@ -379,6 +384,11 @@
 }
 .third-page .silver img {
   height: 80%;
+}
+@media (min-width: 768px) {
+  .third-page .silver img {
+    width: auto;
+  }
 }
 .third-page .footer {
   margin-top: 5vh;
