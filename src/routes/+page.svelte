@@ -13,7 +13,7 @@
             window.location.hash = "#loaded";
             setTimeout(() => {
                 window.location.reload();
-            }, 300);
+            }, 500);
         }
 
         let registerAnimate = 0;
