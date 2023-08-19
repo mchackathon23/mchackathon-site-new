@@ -8,12 +8,6 @@
     let registerOn = false;
 
     onMount(() => {
-
-        if(!window.location.hash) {
-            window.location = window.location + '#loaded';
-            window.location.reload();
-        }
-
         let registerAnimate = 0;
         let logo = document.querySelector(".main-text");
         let year = document.querySelector(".bg-text");
