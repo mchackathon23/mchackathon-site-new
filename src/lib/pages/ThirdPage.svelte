@@ -13,5 +13,17 @@
         <a href="https://artofproblemsolving.com/"><img src="../sponsors/aops.png" alt="aops" /></a>
         <a href=""><img src="" alt="" /></a>
     </div>
-    <div class="footer" />
+    <div class="footer">
+        <img src="../logo.png" alt="logo" />
+        <div class="socials">
+            <a href="https://www.instagram.com/mchackathon2023/"><img src="../instagram.svg" alt="instagram" /></a>
+            <a href="https://discord.gg/7bHKWKgD6w"><img src="../discord.svg" alt="discord" /></a>
+            <a href="mailto:mc.hackathon23@gmail.com"><img src="../mail.svg" alt="email" /></a>
+        </div>
+        <div class="footer-text">
+            <p>© 2021 MC Hackathon</p>
+            <p>Site created by Stephen Zhang</p>
+            <p>Designed by Ray Shen</p>
+        </div>
+    </div>
 </div>
