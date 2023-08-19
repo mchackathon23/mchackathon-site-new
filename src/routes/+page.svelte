@@ -9,7 +9,17 @@
 
     onMount(() => {
 
-        if(window.innerWidth < 768) document.getElementById("first-page-bg").remove();
+        if(window.innerWidth < 768) {
+            document.getElementById("first-page-bg").remove();
+        }
+
+        for(let child of Array.from(document.getElementsByClassName("gold")[0].children)) {
+            child.children[0].style.width = "auto";
+        }
+
+        for(let child of Array.from(document.getElementsByClassName("silver")[0].children)) {
+            child.children[0].style.width = "auto";
+        }
 
         function animate() {
             logo.style.transform =
