@@ -8,6 +8,9 @@
     let registerOn = false;
 
     onMount(() => {
+
+        if(window.innerWidth < 768) document.getElementById("first-page-bg").remove();
+
         let registerAnimate = 0;
         let logo = document.querySelector(".main-text");
         let year = document.querySelector(".bg-text");
