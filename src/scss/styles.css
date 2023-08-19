@@ -108,7 +108,7 @@
   }
 }
 .first-page .register-button {
-  margin-top: 25vh;
+  margin-top: 15vh;
   border: none;
   border-radius: 10px;
   z-index: 20;
@@ -118,6 +118,11 @@
   font-family: "Orbitron", sans-serif;
   color: rgb(255, 129, 117);
   text-shadow: 0px 0px 5px rgba(255, 129, 117, 0.5);
+}
+@media (min-width: 768px) {
+  .first-page .register-button {
+    margin-top: 25vh;
+  }
 }
 .first-page .register-button:hover {
   cursor: pointer;

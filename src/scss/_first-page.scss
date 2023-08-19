@@ -79,7 +79,12 @@
     }
 
     .register-button {
-        margin-top: 25vh;
+        margin-top: 15vh;
+
+        @include breakpoint(md) {
+            margin-top: 25vh;
+        }
+
         border: none;
         border-radius: 10px;
 
