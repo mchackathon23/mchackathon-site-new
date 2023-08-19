@@ -9,11 +9,12 @@
 
     onMount(() => {
 
+        if(window.innerWidth < 768) document.getElementById("first-page-bg").remove();
         if(window.innerWidth < 768 && !window.location.hash) {
             window.location.hash = "#loaded";
             setTimeout(() => {
                 window.location.reload();
-            }, 500);
+            }, 1000);
         }
 
         let registerAnimate = 0;
