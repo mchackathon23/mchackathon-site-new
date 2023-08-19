@@ -64,6 +64,8 @@
         }
 
         a {
+            height: 100%;
+            width: 100%;
             background-color: #FEBC59;
             display: flex;
             justify-content: center;
@@ -73,10 +75,7 @@
 
         img {
             height: 80%;
-
-            @include breakpoint(md) {
-                width: auto;
-            }
+            max-width: 100%;
         }
 
     }
@@ -98,6 +97,8 @@
         }
 
         a {
+            width: 100%;
+            height: 100%;
             background-color: #c0c0c0;
             border-radius: 1rem;
             display: flex;
@@ -107,10 +108,7 @@
 
         img {
             height: 80%;
-
-            @include breakpoint(md) {
-                width: auto;
-            }
+            max-width: 100%;
         }
     }
 

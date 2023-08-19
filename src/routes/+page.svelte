@@ -8,18 +8,6 @@
     let registerOn = false;
 
     onMount(() => {
-
-        if(window.innerWidth < 768) {
-            document.getElementById("first-page-bg").remove();
-            for(let child of Array.from(document.getElementsByClassName("gold")[0].children)) {
-                child.children[0].style.width = "80%";
-            }
-
-            for(let child of Array.from(document.getElementsByClassName("silver")[0].children)) {
-                child.children[0].style.width = "80%";
-            }
-        }
-
         function animate() {
             logo.style.transform =
                 "translate(" + Math.sin(tick) + "vw, " + Math.cos(tick) + "vw)";
