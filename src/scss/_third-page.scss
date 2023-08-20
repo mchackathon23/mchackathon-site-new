@@ -152,8 +152,12 @@
         }
 
         .footer-text {
+            display: flex;
+            flex-direction: column;
             height: 100%;
             text-align: center;
+            justify-content: center;
+
             @include breakpoint(md) {
                 text-align: end;
             }

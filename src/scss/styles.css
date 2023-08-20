@@ -427,8 +427,11 @@
   color: rgb(255, 129, 117);
 }
 .third-page .footer .footer-text {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   text-align: center;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .third-page .footer .footer-text {
