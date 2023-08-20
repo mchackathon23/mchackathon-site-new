@@ -1,4 +1,4 @@
-<script lang="ts"> 
+<script lang="ts">
     export let y = 0;
     export let registerOn;
 </script>
@@ -20,6 +20,9 @@
         }}
         on:mouseleave={() => {
             registerOn = false;
+        }}
+        on:click={() => {
+            window.location.href = "https://discord.gg/7bHKWKgD6w";
         }}
     >
         REGISTER
