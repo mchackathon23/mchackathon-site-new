@@ -40,7 +40,7 @@
             >
         </div>
         <div class="footer-text">
-            <p>© 2021 MC Hackathon</p>
+            <p>© 2023 MC Hackathon</p>
         </div>
     </div>
 </div>
