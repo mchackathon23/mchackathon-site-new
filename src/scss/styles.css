@@ -70,7 +70,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
 }
 .first-page .main-text .one {
   font-size: 4.5vw;
@@ -97,6 +97,9 @@
   .first-page .main-text .two {
     font-size: 6vw;
   }
+}
+.first-page .bg-text {
+  z-index: 1;
 }
 .first-page .bg-text h1 {
   font-size: 25vw;
