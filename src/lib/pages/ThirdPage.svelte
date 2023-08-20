@@ -1,21 +1,21 @@
 <div class="third-page">
     <h1 class="glitch" id="sponsors">Sponsors</h1>
     <div class="gold">
-        <a href="https://www.leangap.org/"
+        <a href="https://www.leangap.org/" target="_blank"
             ><img src="../sponsors/leangap.png" alt="leangap" /></a
         >
     </div>
     <div class="silver">
-        <a href="https://artofproblemsolving.com/"
+        <a href="https://artofproblemsolving.com/" target="_blank"
             ><img src="../sponsors/aops.png" alt="aops" /></a
         >
-        <a href="https://www.desmos.com/"
+        <a href="https://www.desmos.com/" target="_blank"
             ><img src="../sponsors/desmos.png" alt="" /></a
         >
-        <a href="https://www.axure.com/"
+        <a href="https://www.axure.com/" target="_blank"
             ><img src="../sponsors/axure.png" alt="" /></a
         >
-        <a href="https://certopus.com/"
+        <a href="https://certopus.com/" target="_blank"
             ><img src="../sponsors/certopus.png" alt="" /></a
         >
     </div>
@@ -29,13 +29,13 @@
     <div class="footer">
         <img src="../logo.png" alt="logo" />
         <div class="socials">
-            <a href="https://www.instagram.com/mchackathon2023/"
+            <a href="https://www.instagram.com/mchackathon2023/" target="_blank"
                 ><img src="../instagram.svg" alt="instagram" /></a
             >
-            <a href="https://discord.gg/7bHKWKgD6w"
+            <a href="https://discord.gg/7bHKWKgD6w" target="_blank"
                 ><img src="../discord.svg" alt="discord" /></a
             >
-            <a href="mailto:mc.hackathon23@gmail.com"
+            <a href="mailto:mc.hackathon23@gmail.com" target="_blank"
                 ><img src="../mail.svg" alt="email" /></a
             >
         </div>
