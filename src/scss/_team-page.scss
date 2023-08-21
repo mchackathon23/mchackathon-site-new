@@ -1,0 +1,158 @@
+.team-page {
+    width: 80vw;
+    padding: 0 10vw 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+
+        opacity: 0.3;
+        background: url("$lib/team-bg-mobile.avif");
+        background-position: center;
+
+
+        @include breakpoint(md) {
+            background: url("$lib/team-bg-mobile.avif");
+            background-position: center;
+        }
+
+    }
+
+    h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        color: white;
+        padding: 1rem 2rem;
+        background-color: rgba(125,125,125,0.4);
+        border-radius: 3rem;
+        margin: 0;
+        z-index: 1;
+
+        @include breakpoint(md) {
+            font-size: 3.5vw;
+        }
+    }
+
+    h2 {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        color: $secondary-color;
+        margin-top: 3vh;
+        z-index: 1;
+
+        @include breakpoint(md) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .team-leads {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 1;
+        
+        gap: 2vh;
+
+        @include breakpoint(md) {
+            position: relative;
+            flex-direction: row;
+            height: 20vh;
+            gap: 5vw;
+        }
+
+        figure {
+            width: 100%;
+            height: 100%;
+            
+            margin: 0;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 100%;
+                opacity: 1;
+                border-radius: 50%;
+                border: 0.2rem solid $primary-color;
+            }
+
+            figcaption {
+                width: 125%;
+                height: 100%;
+                text-align: center;
+
+                margin-top: 1vh;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            h3 {
+                font: 1rem 'Orbitron', sans-serif;
+                font-weight: 700;
+                color: $primary-color;
+                margin: 0;
+            }
+
+            p {
+                font: 0.8rem 'Orbitron', sans-serif;
+                color: white;
+                margin: 0;
+            }
+
+        }
+    }
+
+    .organizers {
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1;
+
+        text-align: center;
+
+        gap: 2vh;
+
+        @include breakpoint(md) {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 5vw;
+        }
+
+        * {
+            width: 100%;
+        }
+
+        h3 {
+            font: 1rem 'Orbitron', sans-serif;
+            font-weight: 700;
+            color: $primary-color;
+            margin: 0;
+        }
+
+        p {
+            font: 0.8rem 'Orbitron', sans-serif;
+            color: white;
+            margin: 0;
+        }
+    }
+}

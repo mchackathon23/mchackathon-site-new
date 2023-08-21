@@ -43,4 +43,5 @@
             <p>© 2023 MC Hackathon</p>
         </div>
     </div>
+    <div class="bg-fade top" />
 </div>

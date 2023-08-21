@@ -23,4 +23,6 @@
             </div>
         </div>
     </div>
+    <div class="bg-fade top" />
+    <div class="bg-fade bot" />
 </div>
