@@ -54,12 +54,12 @@
 
             team.style.transform =
                 "translate(" +
-                Math.sin(tick + Math.PI / 4) +
+                Math.sin(1.5 * tick + Math.PI / 4) +
                 "vw, " +
                 Math.cos(tick * 2) +
                 "vw";
             team.style.transform +=
-                "rotate(" + Math.sin(tick + Math.PI / 4) * 3 + "deg)";
+                "rotate(" + Math.sin(1.5 * tick + 3 * Math.PI / 4) * 3 + "deg)";
 
             if (registerOn) {
                 if (registerAnimate < 0.95) {
