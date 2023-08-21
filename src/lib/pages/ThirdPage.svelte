@@ -1,26 +1,28 @@
 <div class="third-page">
     <h1 class="glitch" id="sponsors">Sponsors</h1>
     <div class="gold">
-        <a href="https://www.leangap.org/" target="_blank"
+        <a href="https://www.leangap.org/" target="_blank" aria-label="leangap"
             ><img src="../sponsors/leangap.png" alt="leangap" /></a
         >
     </div>
     <div class="silver">
-        <a href="https://artofproblemsolving.com/" target="_blank"
-            ><img src="../sponsors/aops.png" alt="aops" /></a
+        <a
+            href="https://artofproblemsolving.com/"
+            target="_blank"
+            aria-label="aops"><img src="../sponsors/aops.png" alt="aops" /></a
         >
-        <a href="https://www.desmos.com/" target="_blank"
+        <a href="https://www.desmos.com/" target="_blank" aria-label="desmos"
             ><img src="../sponsors/desmos.png" alt="" /></a
         >
-        <a href="https://www.axure.com/" target="_blank"
+        <a href="https://www.axure.com/" target="_blank" aria-label="axure"
             ><img src="../sponsors/axure.png" alt="" /></a
         >
-        <a href="https://certopus.com/" target="_blank"
+        <a href="https://certopus.com/" target="_blank" aria-label="certopus"
             ><img src="../sponsors/certopus.png" alt="" /></a
         >
     </div>
     <p>
-        Interested in sponsoring? Feel free to look at our <a href=""
+        Interested in sponsoring? Feel free to look at our <a href="about:blank"
             >sponsorship package</a
         >
         and email

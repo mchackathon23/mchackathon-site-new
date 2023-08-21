@@ -3,21 +3,21 @@
     <h2>Team Leads</h2>
     <div class="team-leads">
         <figure>
-            <img src="team/ricky.png" alt=" " />
+            <img src="team/ricky.png" alt="Ricky Ye" />
             <figcaption>
                 <h3>Ricky Ye</h3>
                 <p>Finance</p>
             </figcaption>
         </figure>
         <figure>
-            <img src="team/stephen.png" alt=" " />
+            <img src="team/stephen.png" alt="Stephen Zhang" />
             <figcaption>
                 <h3>Stephen Zhang</h3>
                 <p>Marketing</p>
             </figcaption>
         </figure>
         <figure>
-            <img src="team/paul.png" alt=" " />
+            <img src="team/paul.png" alt="Paul Trusov" />
             <figcaption>
                 <h3>Paul Trusov</h3>
                 <p>Head Organizer</p>
