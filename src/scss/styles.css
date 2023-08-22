@@ -297,6 +297,108 @@
   padding: 0;
 }
 
+.schedule-page {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.schedule-page::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+  background: url("$lib/schedule-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .schedule-page {
+    height: 100vh;
+  }
+}
+.schedule-page-content {
+  width: 70%;
+  height: 90%;
+  margin: 5% 5%;
+  padding: 0% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .schedule-page-content {
+    justify-content: space-evenly;
+    margin-bottom: 30vh;
+  }
+}
+.schedule-page h1 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  padding: 1rem 2rem;
+  background-color: rgba(125, 125, 125, 0.4);
+  border-radius: 3rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .schedule-page h1 {
+    font-size: 4vw;
+  }
+}
+.schedule-page p {
+  font-family: "Orbitron", sans-serif;
+  color: white;
+}
+.schedule-page p b {
+  font-weight: 700;
+  color: rgb(255, 129, 117);
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.1rem;
+}
+.schedule-page .boxes {
+  width: 100%;
+  margin-top: 5vh;
+  display: none;
+}
+@media (min-width: 768px) {
+  .schedule-page .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.schedule-page .boxes > div {
+  background-color: rgba(125, 125, 125, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  padding: 1rem 0;
+}
+.schedule-page .boxes > div h1 {
+  color: rgb(56, 189, 248);
+  font-size: 1.5rem;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+.schedule-page .boxes > div p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
 .team-page {
   width: 80vw;
   padding: 0 10vw 15vh 10vw;

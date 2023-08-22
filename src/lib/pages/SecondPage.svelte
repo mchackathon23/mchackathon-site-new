@@ -18,7 +18,7 @@
                 <p>Prizes</p>
             </div>
             <div>
-                <h1>8</h1>
+                <h1>3</h1>
                 <p>Workshops</p>
             </div>
         </div>

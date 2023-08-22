@@ -1,6 +1,7 @@
 <script>
     import FirstPage from "../lib/pages/FirstPage.svelte";
     import SecondPage from "../lib/pages/SecondPage.svelte";
+    import SchedulePage from "../lib/pages/SchedulePage.svelte";
     import TeamPage from "../lib/pages/TeamPage.svelte";
     import ThirdPage from "../lib/pages/ThirdPage.svelte";
     import { onMount } from "svelte";
@@ -17,6 +18,7 @@
         let about = document.getElementById("about");
         let sponsors = document.getElementById("sponsors");
         let team = document.getElementById("team");
+        let schedule = document.getElementById("schedule");
 
         var tick = 0;
 
@@ -61,6 +63,15 @@
             team.style.transform +=
                 "rotate(" + Math.sin(1.5 * tick + 3 * Math.PI / 4) * 3 + "deg)";
 
+            schedule.style.transform =
+                "translate(" +
+                Math.sin(1.5 * tick - Math.PI / 4) +
+                "vw, " +
+                Math.cos(tick * 2) +
+                "vw";
+            schedule.style.transform +=
+                "rotate(" + Math.sin(1.5 * tick + 3 * Math.PI / 4) * 3 + "deg)";
+
             if (registerOn) {
                 if (registerAnimate < 0.95) {
                     registerAnimate += (1 - registerAnimate) / 20;
@@ -96,5 +107,6 @@
 
 <FirstPage {y} bind:registerOn />
 <SecondPage />
+<SchedulePage />
 <TeamPage />
 <ThirdPage />
