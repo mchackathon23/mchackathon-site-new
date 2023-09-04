@@ -6,7 +6,7 @@
             <img src="team/ricky.png" alt="Ricky Ye" />
             <figcaption>
                 <h3>Ricky Ye</h3>
-                <p>Finance</p>
+                <p>Vice President</p>
             </figcaption>
         </figure>
         <figure>
