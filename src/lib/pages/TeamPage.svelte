@@ -17,6 +17,13 @@
             </figcaption>
         </figure>
         <figure>
+            <img src="team/andy.jpg" alt="Andy Ying" />
+            <figcaption>
+                <h3>Andy Ying</h3>
+                <p>Logistics</p>
+            </figcaption>
+        </figure>
+        <figure>
             <img src="team/paul.png" alt="Paul Trusov" />
             <figcaption>
                 <h3>Paul Trusov</h3>

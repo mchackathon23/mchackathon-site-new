@@ -468,7 +468,7 @@
     position: relative;
     flex-direction: row;
     height: 20vh;
-    gap: 5vw;
+    gap: 2vw;
   }
 }
 .team-page .team-leads figure {
