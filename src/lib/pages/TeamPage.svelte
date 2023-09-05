@@ -10,10 +10,10 @@
             </figcaption>
         </figure>
         <figure>
-            <img src="team/stephen.png" alt="Stephen Zhang" />
+            <img src="team/ray.png" alt="Ray Shen" />
             <figcaption>
-                <h3>Stephen Zhang</h3>
-                <p>Marketing</p>
+                <h3>Ray Shen</h3>
+                <p>Cofounder, Marketing</p>
             </figcaption>
         </figure>
         <figure>
