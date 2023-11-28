@@ -9,18 +9,37 @@
 </script>
 
 <style lang="scss">
-   
+    /* Your existing SCSS styles */
+  
+    .schedule-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .schedule-page-content {
+      width: 85%; /* Adjusted width of the content */
+      margin-top: 20px; /* Added margin-top to separate from the top */
+    }
+  
+    .title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      color: #ff9900;
+      text-align: center; /* Center the title */
+      margin-bottom: 20px;
+    }
   
     .faq-item {
       border: 1px solid #ccc;
       border-radius: 5px;
-      padding: 20px; 
-      margin-bottom: 20px; 
+      padding: 20px; /* Increased padding for a bigger box */
+      margin-bottom: 20px; /* Increased margin for better separation */
       cursor: pointer;
       display: flex;
       flex-direction: column;
-      width: 90%; 
-      margin: 0 auto; 
+      width: 85%; /* Adjusted width to be slightly bigger */
+      margin: 0 auto; /* Centered the FAQ items */
     }
   
     .faq-answer {
@@ -34,13 +53,13 @@
       padding: 10px;
       border-radius: 5px;
       margin-top: 5px;
-      display: none; 
+      display: none; /* Initially hiding answer */
     }
   
     .faq-answer.open {
       height: auto;
       transition: height 0.5s ease;
-      display: block; 
+      display: block; /* Display answer when expanded */
     }
   
     .question {
@@ -52,13 +71,7 @@
       justify-content: space-between;
       align-items: center;
     }
-    .title {
-        font-family: 'Orbitron', sans-serif;
-        font-size: 2rem;
-        color: #ff9900;
-        text-align: center; /* Center the title */
-        margin-bottom: 20px;
-    }
+  
     .arrow {
       font-size: 1.2rem;
       transition: transform 0.3s ease;
@@ -70,8 +83,8 @@
   </style>
   
   <div class="schedule-page">
+    <h1 class="glitch title" id="faq">Frequently Asked Questions</h1>
     <div class="schedule-page-content">
-      <h1 class="glitch" id="faq">Frequently Asked Questions</h1>
       <div class="faq">
         {#each faqItems as item, index}
           <div class="faq-item" on:click={() => toggleAnswer(index)}>
@@ -88,6 +101,6 @@
         {/each}
       </div>
     </div>
-    <div class="bg-fade top" />
-    <div class="bg-fade bot" />
+    <div class="bg-fade top"></div>
+    <div class="bg-fade bot"></div>
   </div>
