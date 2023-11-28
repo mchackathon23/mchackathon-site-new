@@ -11,25 +11,6 @@
 <style lang="scss">
     /* Your existing SCSS styles */
   
-    .schedule-page {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .schedule-page-content {
-      width: 85%; /* Adjusted width of the content */
-      margin-top: 20px; /* Added margin-top to separate from the top */
-    }
-  
-    .title {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2rem;
-      color: #ff9900;
-      text-align: center; /* Center the title */
-      margin-bottom: 20px;
-    }
-  
     .faq-item {
       border: 1px solid #ccc;
       border-radius: 5px;
@@ -83,7 +64,6 @@
   </style>
   
   <div class="schedule-page">
-    <h1 class="glitch title" id="faq">Frequently Asked Questions</h1>
     <div class="schedule-page-content">
       <div class="faq">
         {#each faqItems as item, index}
