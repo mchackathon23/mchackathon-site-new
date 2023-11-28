@@ -34,11 +34,13 @@
       padding: 10px;
       border-radius: 5px;
       margin-top: 5px;
+      display: none; /* Initially hiding answer */
     }
   
     .faq-answer.open {
       height: auto;
       transition: height 0.5s ease;
+      display: block; /* Display answer when expanded */
     }
   
     .question {
