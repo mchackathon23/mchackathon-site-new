@@ -9,7 +9,7 @@
 </script>
 
 <style lang="scss">
-    /* Your existing SCSS styles */
+    
   
     .faq-item {
       border: 1px solid #ccc;
@@ -17,9 +17,6 @@
       padding: 10px;
       margin-bottom: 10px;
       cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
   
     .faq-answer {
@@ -36,24 +33,15 @@
     }
   
     .faq-answer.open {
-      max-height: 200px; /* Adjust the value based on your content */
+      max-height: 200px; 
       transition: max-height 0.3s ease;
     }
   
     .question {
       font-family: 'Orbitron', sans-serif;
       font-size: 1.5rem;
-      color: #ffcc00;
-      margin-bottom: 0;
-    }
-  
-    .arrow {
-      font-size: 1.5rem;
-      transition: transform 0.3s ease;
-    }
-  
-    .arrow.down {
-      transform: rotate(180deg);
+      color: #ff9900; 
+      margin-bottom: 5px;
     }
   </style>
   
@@ -64,14 +52,7 @@
               {#each faqItems as item, index}
                 <div class="faq-item" on:click={() => toggleAnswer(index)}>
                   <div class="question">{item.question}</div>
-                  {#if item.expanded}
-                    <span class="arrow down">&#9650;</span>
-                  {:else}
-                    <span class="arrow">&#9658;</span>
-                  {/if}
-                  {#if item.expanded}
-                    <div class="faq-answer" class:open={item.expanded}>{item.answer}</div>
-                  {/if}
+                  <div class="faq-answer" class:open={item.expanded}>{item.answer}</div>
                 </div>
               {/each}
           </div>
