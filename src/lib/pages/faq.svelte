@@ -1,6 +1,9 @@
 <script>
     let faqItems = [
-      { question: "How much is it to enter the hackathon?", answer: "MC Hackathon is completely free!", expanded: false }
+      { question: "How much is it to enter the hackathon?", answer: "Nothing! MC Hackathon is completely free!", expanded: false },
+      { question: "Do we need to bring food?", answer: "No! There will be free pizza, snacks, and water for everyone!", expanded: false},
+      { question: "How many members per group?", answer: "Up to 4", expanded: false},
+      { question: "What if we have more questions that aren't here?", answer: "Join the discord!", expanded: false}
     ];
   
     function toggleAnswer(index) {
@@ -46,7 +49,7 @@
     .question {
       font-family: 'Orbitron', sans-serif;
       font-size: 1.5rem;
-      color: #ff9900;
+      color: #fff;
       margin-bottom: 5px;
       display: flex;
       justify-content: space-between;
