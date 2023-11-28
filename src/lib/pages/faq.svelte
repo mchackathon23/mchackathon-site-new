@@ -9,18 +9,18 @@
 </script>
 
 <style lang="scss">
-    /* Your existing SCSS styles */
+   
   
     .faq-item {
       border: 1px solid #ccc;
       border-radius: 5px;
-      padding: 20px; /* Increased padding for a bigger box */
-      margin-bottom: 20px; /* Increased margin for better separation */
+      padding: 20px; 
+      margin-bottom: 20px; 
       cursor: pointer;
       display: flex;
       flex-direction: column;
-      width: 80%; /* Adjusted width to occupy more space */
-      margin: 0 auto; /* Centered the FAQ items */
+      width: 80%; 
+      margin: 0 auto; 
     }
   
     .faq-answer {
@@ -34,13 +34,13 @@
       padding: 10px;
       border-radius: 5px;
       margin-top: 5px;
-      display: none; /* Initially hiding answer */
+      display: none; 
     }
   
     .faq-answer.open {
       height: auto;
       transition: height 0.5s ease;
-      display: block; /* Display answer when expanded */
+      display: block; 
     }
   
     .question {
