@@ -4,6 +4,7 @@
     import SchedulePage from "../lib/pages/SchedulePage.svelte";
     import TeamPage from "../lib/pages/TeamPage.svelte";
     import ThirdPage from "../lib/pages/ThirdPage.svelte";
+    import Faq from "../lib/pages/faq.svelte"
     import { onMount } from "svelte";
 
     let y = 0;
@@ -108,5 +109,6 @@
 <FirstPage {y} bind:registerOn />
 <SecondPage />
 <SchedulePage />
+<Faq />
 <TeamPage />
 <ThirdPage />
