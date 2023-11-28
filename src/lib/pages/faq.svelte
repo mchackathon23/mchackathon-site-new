@@ -9,7 +9,7 @@
 </script>
 
 <style lang="scss">
-    
+    /* Your existing SCSS styles */
   
     .faq-item {
       border: 1px solid #ccc;
@@ -18,14 +18,13 @@
       margin-bottom: 10px;
       cursor: pointer;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
     }
   
     .faq-answer {
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.5s ease; 
+      transition: max-height 0.5s ease; /* Smoother animation */
       color: #fff;
       font-family: 'Orbitron', sans-serif;
       font-size: 1.2rem;
@@ -36,8 +35,8 @@
     }
   
     .faq-answer.open {
-      max-height: 200px; 
-      transition: max-height 0.5s ease; 
+      max-height: 200px; /* Adjust the value based on your content */
+      transition: max-height 0.5s ease; /* Smoother animation */
     }
   
     .question {
@@ -45,12 +44,14 @@
       font-size: 1.5rem;
       color: #ff9900;
       margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   
     .arrow {
       font-size: 1.2rem;
       transition: transform 0.3s ease;
-      margin-left: 10px;
     }
   
     .arrow.down {
@@ -64,8 +65,10 @@
           <div class="faq">
               {#each faqItems as item, index}
                 <div class="faq-item" on:click={() => toggleAnswer(index)}>
-                  <div class="question">{item.question}</div>
-                  <span class="arrow" class:down={item.expanded}>&#9660;</span>
+                  <div class="question">
+                    {item.question}
+                    <span class="arrow" class:down={item.expanded}>&#9660;</span>
+                  </div>
                   <div class="faq-answer" class:open={item.expanded}>{item.answer}</div>
                 </div>
               {/each}
