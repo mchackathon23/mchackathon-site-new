@@ -22,9 +22,9 @@
     }
   
     .faq-answer {
-      max-height: 0;
+      height: 0;
       overflow: hidden;
-      transition: max-height 0.5s ease; /* Smoother animation */
+      transition: height 0.5s ease;
       color: #fff;
       font-family: 'Orbitron', sans-serif;
       font-size: 1.2rem;
@@ -35,59 +35,8 @@
     }
   
     .faq-answer.open {
-      max-height: 200px; /* Adjust the value based on your content */
-      transition: max-height 0.5s ease; /* Smoother animation */
-    }
-  
-    .question {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.5rem;
-      color: #ff9900;
-      margin-bottom: 5px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .arrow {
-      font-size: 1.2rem;
-      transition: transform 0.3s ease;
-    }
-  
-    .arrow.down {
-      transform: rotate(180deg);
-    }
-  </style>
-  
-  <style lang="scss">
-    /* Your existing SCSS styles */
-  
-    .faq-item {
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
-      margin-bottom: 10px;
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s ease;
-      color: #fff;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.2rem;
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 10px;
-      border-radius: 5px;
-      margin-top: 5px;
-    }
-  
-    .faq-answer.open {
-      max-height: 200px;
-      transition: max-height 0.5s ease;
+      height: auto;
+      transition: height 0.5s ease;
     }
   
     .question {
@@ -120,7 +69,11 @@
               {item.question}
               <span class="arrow" class:down={item.expanded}>&#9660;</span>
             </div>
-            <div class="faq-answer" class:open={item.expanded}>{item.answer}</div>
+            <div class="faq-answer" class:open={item.expanded}>
+              {#if item.expanded}
+                {item.answer}
+              {/if}
+            </div>
           </div>
         {/each}
       </div>
