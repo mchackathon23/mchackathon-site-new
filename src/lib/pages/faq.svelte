@@ -14,13 +14,13 @@
     .faq-item {
       border: 1px solid #ccc;
       border-radius: 5px;
-      padding: 10px;
-      margin-bottom: 10px;
+      padding: 20px; /* Increased padding for a bigger box */
+      margin-bottom: 20px; /* Increased margin for better separation */
       cursor: pointer;
       display: flex;
       flex-direction: column;
-      width: 300px; /* Set a constant width for the FAQ items */
-      margin: 0 auto; /* Center the FAQ items */
+      width: 80%; /* Adjusted width to occupy more space */
+      margin: 0 auto; /* Centered the FAQ items */
     }
   
     .faq-answer {
