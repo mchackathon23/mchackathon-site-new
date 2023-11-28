@@ -22,7 +22,7 @@
             registerOn = false;
         }}
         on:click={() => {
-            window.location.href = "https://forms.gle/4t9iutwZvbrXfqoF7";
+            window.open("https://forms.gle/4t9iutwZvbrXfqoF7");
         }}
     >
         REGISTER
