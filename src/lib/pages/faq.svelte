@@ -19,6 +19,8 @@
       cursor: pointer;
       display: flex;
       flex-direction: column;
+      width: 300px; /* Set a constant width for the FAQ items */
+      margin: 0 auto; /* Center the FAQ items */
     }
   
     .faq-answer {
