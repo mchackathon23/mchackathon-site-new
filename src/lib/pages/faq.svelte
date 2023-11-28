@@ -59,21 +59,72 @@
     }
   </style>
   
+  <style lang="scss">
+    /* Your existing SCSS styles */
+  
+    .faq-item {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+  
+    .faq-answer.open {
+      max-height: 200px;
+      transition: max-height 0.5s ease;
+    }
+  
+    .question {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5rem;
+      color: #ff9900;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .arrow {
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+  
+    .arrow.down {
+      transform: rotate(180deg);
+    }
+  </style>
+  
   <div class="schedule-page">
-      <div class="schedule-page-content">
-          <h1 class="glitch" id="faq">Frequently Asked Questions</h1>
-          <div class="faq">
-              {#each faqItems as item, index}
-                <div class="faq-item" on:click={() => toggleAnswer(index)}>
-                  <div class="question">
-                    {item.question}
-                    <span class="arrow" class:down={item.expanded}>&#9660;</span>
-                  </div>
-                  <div class="faq-answer" class:open={item.expanded}>{item.answer}</div>
-                </div>
-              {/each}
+    <div class="schedule-page-content">
+      <h1 class="glitch" id="faq">Frequently Asked Questions</h1>
+      <div class="faq">
+        {#each faqItems as item, index}
+          <div class="faq-item" on:click={() => toggleAnswer(index)}>
+            <div class="question">
+              {item.question}
+              <span class="arrow" class:down={item.expanded}>&#9660;</span>
+            </div>
+            <div class="faq-answer" class:open={item.expanded}>{item.answer}</div>
           </div>
+        {/each}
       </div>
-      <div class="bg-fade top" />
-      <div class="bg-fade bot" />
+    </div>
+    <div class="bg-fade top" />
+    <div class="bg-fade bot" />
   </div>
