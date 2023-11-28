@@ -19,7 +19,7 @@
       cursor: pointer;
       display: flex;
       flex-direction: column;
-      width: 80%; 
+      width: 90%; 
       margin: 0 auto; 
     }
   
@@ -52,7 +52,13 @@
       justify-content: space-between;
       align-items: center;
     }
-  
+    .title {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2rem;
+        color: #ff9900;
+        text-align: center; /* Center the title */
+        margin-bottom: 20px;
+    }
     .arrow {
       font-size: 1.2rem;
       transition: transform 0.3s ease;
