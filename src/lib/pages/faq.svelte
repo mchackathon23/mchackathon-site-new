@@ -17,12 +17,15 @@
       padding: 10px;
       margin-bottom: 10px;
       cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   
     .faq-answer {
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.3s ease;
+      transition: max-height 0.5s ease; 
       color: #fff;
       font-family: 'Orbitron', sans-serif;
       font-size: 1.2rem;
@@ -34,14 +37,24 @@
   
     .faq-answer.open {
       max-height: 200px; 
-      transition: max-height 0.3s ease;
+      transition: max-height 0.5s ease; 
     }
   
     .question {
       font-family: 'Orbitron', sans-serif;
       font-size: 1.5rem;
-      color: #ff9900; 
+      color: #ff9900;
       margin-bottom: 5px;
+    }
+  
+    .arrow {
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+      margin-left: 10px;
+    }
+  
+    .arrow.down {
+      transform: rotate(180deg);
     }
   </style>
   
@@ -52,6 +65,7 @@
               {#each faqItems as item, index}
                 <div class="faq-item" on:click={() => toggleAnswer(index)}>
                   <div class="question">{item.question}</div>
+                  <span class="arrow" class:down={item.expanded}>&#9660;</span>
                   <div class="faq-answer" class:open={item.expanded}>{item.answer}</div>
                 </div>
               {/each}
