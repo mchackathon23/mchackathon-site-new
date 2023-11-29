@@ -3,7 +3,7 @@
         <h1 class="glitch" id="about">About</h1>
         <p>
             On <b>December 17, 2023</b>, join us at <b>10101 Molecular Dr #100</b> for Montgomery County's first ever
-            <b>county-wide</b> hackathon. MC Hackathon is a <b>colloborative</b>
+            <b>county-wide</b> hackathon. MC Hackathon is a <b>collaborative</b>
             coding event where teams of up to 4 work together to create a project.
             With prizes of up to <b>$500</b> and <b>fun activities</b>, MC
             Hackathon will be an experience you'll <b>never forget</b>.
