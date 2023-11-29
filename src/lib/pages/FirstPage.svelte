@@ -1,6 +1,7 @@
 <script lang="ts">
     export let y = 0;
     export let registerOn;
+    export let discordOn;
 </script>
 
 <div class="first-page" id="first-page">
@@ -26,6 +27,20 @@
         }}
     >
         REGISTER
+    </button>
+    <button
+        class="discord-button hover-scale"
+        on:mouseenter={() => {
+            discordOn = true;
+        }}
+        on:mouseleave={() => {
+            discordOn = false;
+        }}
+        on:click={() => {
+            window.open("https://discord.gg/GZpUnC3HTa");
+        }}
+    >
+        DISCORD
     </button>
     <div class="scroll" />
     <div class="bg-fade" />

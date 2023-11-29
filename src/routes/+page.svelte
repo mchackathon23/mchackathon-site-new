@@ -9,12 +9,15 @@
 
     let y = 0;
     let registerOn = false;
+    let discordOn = false;
 
     onMount(() => {
         let registerAnimate = 0;
+        let discordAnimate = 0;
         let logo = document.querySelector(".main-text");
         let year = document.querySelector(".bg-text");
         let register = document.querySelector(".register-button");
+        let discord = document.querySelector(".discord-button");
         let scroll = document.querySelector(".scroll");
         let about = document.getElementById("about");
         let sponsors = document.getElementById("sponsors");
@@ -91,6 +94,26 @@
                 Math.cos(tick * 0.5 - Math.PI / 8) * 10 +
                 "px)";
             register.style.transform +=
+                "rotate(" + Math.sin(tick * 0.5 + Math.PI / 2) * 3 + "deg)";
+
+            if (discordOn) {
+                if (discordAnimate < 0.95) {
+                    discordAnimate += (1 - discordAnimate) / 20;
+                }
+            } else {
+                if (discordAnimate > 0) {
+                    discordAnimate /= 1.2;
+                }
+            }
+
+            discord.style.fontSize = 4 + discordAnimate * 0.7 + "vw";
+            discord.style.transform =
+                "translate(" +
+                Math.sin(tick * 0.5 + Math.PI / 8) * 10 +
+                "px, " +
+                Math.cos(tick * 0.5 - Math.PI / 8) * 10 +
+                "px)";
+            discord.style.transform +=
                 "rotate(" + Math.sin(tick * 0.5 - Math.PI / 2) * 3 + "deg)";
 
             scroll.style.opacity = 1 - y / 300;
@@ -106,7 +129,7 @@
 </svelte:head>
 <svelte:window bind:scrollY={y} />
 
-<FirstPage {y} bind:registerOn />
+<FirstPage {y} bind:registerOn bind:discordOn />
 <SecondPage />
 <SchedulePage />
 <Faq />
