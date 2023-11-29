@@ -2,11 +2,12 @@
     <div class="schedule-page-content">
         <h1 class="glitch" id="schedule">Schedule</h1>
         <div class="schedule">
-            <p>8AM - 4PM: Opening ceremony and work time</p>
-            <p>4PM - 5PM: Hackathon concludes & judging</p>
-            <p>5PM - 6PM: Closing ceremony</p>
-            <p>2PM - 4PM: Escape room <b>(Optional)</b></p>
-            <p>4PM - 5PM: Computer science trivia competition <b>(Optional)</b></p>
+            <p>Arrival to Competition end (8:00 AM - 1:00 PM)</p>
+            <p>Welcome presentation (1:00 PM - 1:15 PM)</p>
+            <p>Judging (1:45 PM - 3:30 PM)</p>
+            <p>Escape Room (3:45 PM - 4:45 PM)</p>
+            <p>Trivia (5:00 PM - 5:30 PM)</p>
+            <p>Closing ceremony (5:30 PM - 6:00 PM)</p>
         </div>
     </div>
     <div class="bg-fade top" />
