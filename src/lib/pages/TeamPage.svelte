@@ -17,6 +17,13 @@
             </figcaption>
         </figure>
         <figure>
+            <img src="team/stephen.jpg" alt="Stephen Zhang" />
+            <figcaption>
+                <h3>Stephen Zhang</h3>
+                <p>Tech Lead</p>
+            </figcaption>
+        </figure>
+        <figure>
             <img src="team/andy.jpg" alt="Andy Ying" />
             <figcaption>
                 <h3>Andy Ying</h3>
