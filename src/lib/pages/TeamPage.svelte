@@ -6,7 +6,7 @@
             <img src="team/ricky.png" alt="Ricky Ye" />
             <figcaption>
                 <h3>Ricky Ye</h3>
-                <p>Vice President</p>
+                <p>Cofounder</p>
             </figcaption>
         </figure>
         <figure>
@@ -34,7 +34,7 @@
             <img src="team/paul.png" alt="Paul Trusov" />
             <figcaption>
                 <h3>Paul Trusov</h3>
-                <p>Head Organizer</p>
+                <p>Cofounder</p>
             </figcaption>
         </figure>
     </div>

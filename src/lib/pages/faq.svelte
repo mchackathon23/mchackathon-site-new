@@ -17,8 +17,10 @@
     .faq-item {
       border: 1px solid #ccc;
       border-radius: 5px;
-      padding: 20px; /* Increased padding for a bigger box */
-      margin-bottom: 20px; /* Increased margin for better separation */
+      padding: 10px;
+      @include breakpoint(md) {
+        padding: 20px; /* Increased padding for a bigger box */
+      }
       cursor: pointer;
       display: flex;
       flex-direction: column;
@@ -31,8 +33,11 @@
       overflow: hidden;
       transition: height 0.5s ease;
       color: #fff;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.2rem;
+      font-family: 'Orbitron', sans-serif; 
+      font-size: 1rem;
+      @include breakpoint(md) {
+        font-size: 1.2rem;
+      }
       background-color: rgba(255, 255, 255, 0.1);
       padding: 10px;
       border-radius: 5px;
@@ -48,7 +53,10 @@
   
     .question {
       font-family: 'Orbitron', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1rem;
+      @include breakpoint(md) {
+        font-size: 1.5rem;
+      }
       color: #fff;
       margin-bottom: 5px;
       display: flex;
@@ -57,33 +65,43 @@
     }
   
     .arrow {
-      font-size: 1.2rem;
+      font-size: 1rem;
       transition: transform 0.3s ease;
     }
   
     .arrow.down {
       transform: rotate(180deg);
     }
+
+    .faq-page {
+      margin-bottom: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .faq {
+      width: 80vw;
+      @include breakpoint(md) {
+        width: 60vw;
+      }
+    }
   </style>
   
-  <div class="schedule-page">
-    <div class="schedule-page-content">
-      <div class="faq">
-        {#each faqItems as item, index}
-          <div class="faq-item" on:click={() => toggleAnswer(index)}>
-            <div class="question">
-              {item.question}
-              <span class="arrow" class:down={item.expanded}>&#9660;</span>
-            </div>
-            <div class="faq-answer" class:open={item.expanded}>
-              {#if item.expanded}
-                {item.answer}
-              {/if}
-            </div>
+  <div class="faq-page">
+    <div class="faq">
+      {#each faqItems as item, index}
+        <div class="faq-item" on:click={() => toggleAnswer(index)}>
+          <div class="question">
+            {item.question}
+            <span class="arrow" class:down={item.expanded}>&#9660;</span>
           </div>
-        {/each}
-      </div>
+          <div class="faq-answer" class:open={item.expanded}>
+            {#if item.expanded}
+              {item.answer}
+            {/if}
+          </div>
+        </div>
+      {/each}
     </div>
-    <div class="bg-fade top"></div>
-    <div class="bg-fade bot"></div>
   </div>
