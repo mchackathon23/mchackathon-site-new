@@ -19,7 +19,7 @@
             </div>
             <div>
                 <h1>3</h1>
-                <p>Workshops</p>
+                <p>Activities</p>
             </div>
         </div>
     </div>
