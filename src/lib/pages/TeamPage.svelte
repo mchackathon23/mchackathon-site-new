@@ -33,7 +33,8 @@
         <figure>
             <img src="team/paul.png" alt="Paul Trusov" />
             <figcaption>
-                <h3>Paul Trusov</h3>
+                <h3><a href="https://paultrusov.me/"
+            >Paul Trusov</a</h3>
                 <p>Cofounder, President</p>
             </figcaption>
         </figure>
